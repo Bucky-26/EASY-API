@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+    margin: auto;
+  background-color: #D6E6F0;
+}
+
+.container {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.header_main {
+    top: 0;
+    right: 0; 
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: fit-content;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    transition: top 1.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header_main img {
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    max-height: 90px;
+}
+
+.navbar {
+    margin-right: auto;
+    /*border: 1px solid black;*/
+    justify-content: flex-end; 
+    display: flex;
+    gap: 20px;
+    width: 70%;
+}
+
+.navbar a {
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 50px;
+}
+
+.navbar a:hover {
+        color: #02A7F0;
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 9%;
+}
+.api-demo-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  height: auto;
+  width:auto;
+  margin-left: auto;
+  margin-right: auto;
+justify-content: center;
+  background-color: #fff;
+  border-radius: 9px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+
+.api-demo-form .title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px; 
+  background-color: #169BD5;
+  color: #fff;
+  padding: 10px;
+  border-radius: 9px 9px 0 0; 
+}
+
+.api-demo-form select {
+  margin: auto;
+  width: 500px  ;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  outline: none;
+}
+
+.api-demo-form select::after {
+  content: '\25BC'; 
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-size: 16px;
+}
+
+.api-demo-form select option {
+  background-color: #fff;
+  color: #333;
+}
+
+.api-demo-form select option:hover {
+  background-color: #169BD5;
+  color: #fff;
+}
+/* Style the button */
+.try {
+  text-align: center;
+  margin-top: 20px; /* Add space above the button */
+}
+
+/* Style the input container */
+#inputContainer {
+  display: none;
+  margin-top: 10px; /* Add spacing below the dropdown */
+}
+
+/* Style the text box (input) */
+#inputContainer .parameter[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add spacing between input and button */
+}
+
+.parameter{
+  margin: auto;
+  width: 200  ;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  outline: none;}
+/* Style the "Send Request" button */
+#inputContainer .sendreq {
+  padding: 5px 10px;
+  background-color: #169BD5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Hover effect for the button */
+#inputContainer button:hover {
+  background-color: #137c9b; /* Darker shade on hover */
+}
+
+
+.try .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #169BD5;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.try .button:hover {
+  background-color: #137c9b; /* Darker shade on hover */
+}
+
+/* Add a click effect */
+.try .button:active {
+  background-color: #0e5f7f; /* Even darker shade when clicked */
+}
+
+
+
+.main {
+  text-align: center;
+         background-color: #D6E6F0;
+}
+.main h1{
+  font-size: xx-large;
+  font-weight: bolder;
+  font-family: 'Nunito', sans-serif;
+
+}
+.middle {
+        background-color: #fff;
+         padding: 5rem 9%;
+}
+.top{
+
+  text-align: center;
+  
+}
+.top h1{
+  font-style: normal ;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+.reasons {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column; /* Keep the flex-direction as column */
+}
+.reasons h2 {
+font-size: xx-large;
+}
+.reasons p {
+  font-size: 20px!important;
+}
+.reasons .reason_1st {
+
+  display: flex;
+  flex-direction: row;
+  gap:200px;
+}
+
+.reasons .reason_2nd {
+  gap:200px;
+  width: 100%;
+  display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.reasons .reason_2nd p{
+  font-size: large;
+  
+}
+.reasons .reason_3rd{
+  
+  display: flex;
+  flex-direction: row;
+}
+.reasons .reason_1st img{
+
+  margin: auto;
+  justify-content: flex-end;
+  height: 200px;
+  width: auto;
+}
+.reasons .reason_2nd img{
+  margin: auto;
+  justify-content: flex-end;
+  height: 200px;
+  width: auto;
+}
+.reasons .reason_3rd img{
+  margin: auto;
+  justify-content: flex-end;
+  height: 200px;
+  width: auto;
+}
+.container_0{
+margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+.last {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 0;
+  text-align: center;
+}
+.last h1{
+  font-size: 40px;
+}
+.last .main-con{
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  gap: 100px;
+}
+.last img{
+  align-self: center;
+  width: 200px;
+  height: 200px;
+}
+.last .main-con #items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.last .main-con .students{
+  align-self: flex-start;
+}
+.last .main-con .programmers{
+  align-content: center;
+}
+.menu {
+  align-content: center;
+  gap: 50px;
+ 
+  background-color: black;
+  justify-content: space-between;
+  padding: 10px;
+}
+.con{
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}
+.menu {
+  padding: auto;
+}
+.menu .started {
+  margin: auto;
+text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+.menu .started h2 {
+  margin: 0;
+  padding: 0; 
+  font-size: 24px;
+}
+
+.menu .started p {
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0; 
+  font-size: 16px; 
+}
+.about {
+  color: #fff;
+  text-align: center; 
+  flex: 1; 
+  margin: 0 10px; 
+}
+
+
+.middle{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.connect {
+  display: block;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  color: #fff;
+  text-align: right; 
+  margin-left: 10px; 
+}
+.connect-content{
+  background-color: #02A7F0;
+  display: flex;
+  flex-direction: column;
+}
+.icons i {
+  font-size: 2em;
+}
+.icons{ 
+  
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  flex-direction:row  ;
+}
+.copyright{
+  bottom: 0;
+  text-align: center;
+  color: white;
+}

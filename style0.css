@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+body{
+    margin: auto;
+    background-color: #D6E6F0;
+}
+section {
+    min-height: 100vh;
+   padding: 5rem 9%;
+}
+header{
+    top: 0;
+    right: 0; 
+    left: 0;
+    width: 100%;
+    position: fixed;
+    height: fit-content;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    transition: top 1.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header img{
+    margin-left: auto; 
+    margin-right: auto; 
+    display: block; 
+    max-height: 90px;
+}
+header nav{
+    padding: auto;  
+    margin-right: auto;
+    /*border: 1px solid black;*/
+    justify-content: flex-end; 
+    display: flex;
+    gap: 20px;
+    width: 70%;
+}
+header nav a{
+    font-size: x-large;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Nunito', sans-serif;
+    margin-right: 50px;
+}
+
+footer{
+    padding: auto;
+    color: #D6E6F0;
+    background-color: black;
+text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+footer .con{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+}
+.started{
+    display: flex;
+    flex-direction: column;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+}
+.api-directory{
+    cursor: pointer;
+    text-align: center;
+    padding-right: 20px;
+    height: 100%;
+}
+.api-directory ol {
+    padding: auto;
+    text-align: center;
+    list-style-type: none;
+  }
+  
+  .api-directory li {
+    text-align: left;
+  }
+  .main-content{
+    padding: auto;
+    height: auto;
+width: 100%;
+}
+.api-title{
+ display: flex;
+ flex-direction: column;
+ color: #07285b;
+
+    text-align: center;
+}
+.apiurl{
+    text-align: start;
+justify-content: flex-start;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #07285b;
+    border-bottom: 1px solid gray;
+}
+#apiurl{
+    color: green;
+}
+.getss{
+    
+    margin-left: 20px;
+    color:#e83e8c;
+}
